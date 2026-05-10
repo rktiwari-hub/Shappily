@@ -5,11 +5,13 @@
     --text-muted: #d0c8d6;
     --accent: #f0d37a;
     --accent-dark: #2b1c10;
+    --page-min-height: 86vh;
     --hero-image-url: url("https://github.com/user-attachments/assets/a0702d9a-e692-406e-a053-942677c7b81e");
     --eyebrow-color: #f2e3e0;
     --character-crop-width: 880px;
     --character-crop-x: -260px;
     --character-crop-y: -100px;
+    --vision-curve-radius: 0 0 50% 50% / 0 0 100% 100%;
 }
 
 * {
@@ -39,7 +41,7 @@ button {
 
 .page {
     position: relative;
-    min-height: 86vh;
+    min-height: var(--page-min-height);
     padding: 28px 60px 150px;
     background: var(--hero-image-url) center/cover no-repeat;
     display: flex;
@@ -235,7 +237,7 @@ button {
     align-items: flex-end;
     justify-content: center;
     filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.45));
-    background-image: var(--hero-image-url);
+    background-image: inherit;
     background-size: var(--character-crop-width) auto;
     background-position: var(--character-crop-x) var(--character-crop-y);
     background-repeat: no-repeat;
@@ -257,7 +259,7 @@ button {
     width: 100%;
     height: 180px;
     background: var(--bg-panel);
-    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    border-radius: var(--vision-curve-radius);
 }
 
 .vision-inner {
