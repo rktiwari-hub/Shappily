@@ -9,6 +9,7 @@
     --nav-gap: 24px;
     --hero-title-min: 40px;
     --hero-title-max: 86px;
+    --hero-title-viewport-scale: 7vw;
     --hero-title-word-spacing: 14px;
     --page-min-height: 86vh;
     --hero-image-url: url("https://github.com/user-attachments/assets/a0702d9a-e692-406e-a053-942677c7b81e");
@@ -185,7 +186,7 @@ button {
 
 .hero-title {
     font-family: "Cinzel", serif;
-    font-size: clamp(var(--hero-title-min), 7vw, var(--hero-title-max));
+    font-size: clamp(var(--hero-title-min), var(--hero-title-viewport-scale), var(--hero-title-max));
     letter-spacing: 3px;
     line-height: 0.95;
     text-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
