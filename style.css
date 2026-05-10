@@ -5,6 +5,9 @@
     --text-muted: #d0c8d6;
     --accent: #f0d37a;
     --accent-dark: #2b1c10;
+    --character-img-width: 880px;
+    --character-offset-x: -260px;
+    --character-offset-y: -100px;
 }
 
 * {
@@ -233,8 +236,8 @@ button {
 }
 
 .hero-character img {
-    width: 880px;
-    transform: translate(-260px, -100px);
+    width: var(--character-img-width);
+    transform: translate(var(--character-offset-x), var(--character-offset-y));
 }
 
 .vision {
