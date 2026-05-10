@@ -163,6 +163,11 @@ button {
     stroke-linejoin: round;
 }
 
+.icon-btn svg.icon-fill {
+    fill: var(--text-main);
+    stroke: none;
+}
+
 .hero {
     display: flex;
     align-items: center;
