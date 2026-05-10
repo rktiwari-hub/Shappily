@@ -672,6 +672,7 @@ h1 .accent {
     letter-spacing: 0.06em;
 }
 
+/* Offset anchor targets so fixed navigation doesn't cover section headings. */
 .anchor-target {
     position: relative;
     top: -80px;
