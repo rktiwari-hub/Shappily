@@ -237,7 +237,7 @@ button {
     align-items: flex-end;
     justify-content: center;
     filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.45));
-    background-image: inherit;
+    background-image: var(--hero-image-url);
     background-size: var(--character-crop-width) auto;
     background-position: var(--character-crop-x) var(--character-crop-y);
     background-repeat: no-repeat;
