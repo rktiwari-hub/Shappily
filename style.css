@@ -8,6 +8,7 @@
     --orange: #f6b12d;
     --red: #e53b3b;
     --shadow: 0 18px 40px rgba(33, 27, 21, 0.12);
+    --white: #fff;
 }
 
 * {
@@ -134,7 +135,7 @@ button {
     align-items: center;
     gap: 10px;
     padding: 8px 12px 8px 16px;
-    background: #fff;
+    background: var(--white);
     border-radius: 999px;
     box-shadow: 0 10px 24px rgba(30, 25, 20, 0.08);
 }
@@ -187,7 +188,7 @@ button {
 .cart-icon {
     width: 16px;
     height: 14px;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     border-radius: 3px 3px 5px 5px;
     position: relative;
 }
@@ -197,7 +198,7 @@ button {
     position: absolute;
     width: 10px;
     height: 5px;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     border-bottom: none;
     border-radius: 6px 6px 0 0;
     top: -7px;
@@ -212,7 +213,7 @@ button {
     height: 18px;
     border-radius: 50%;
     background: var(--red);
-    color: #fff;
+    color: var(--white);
     font-size: 11px;
     display: grid;
     place-items: center;
@@ -287,7 +288,7 @@ h1 .accent {
 
 .primary-btn {
     background: #111;
-    color: #fff;
+    color: var(--white);
     padding: 12px 22px;
     border-radius: 999px;
     text-transform: uppercase;
@@ -302,7 +303,7 @@ h1 .accent {
 .bag-mini {
     width: 18px;
     height: 16px;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     border-radius: 3px 3px 5px 5px;
     position: relative;
 }
@@ -312,7 +313,7 @@ h1 .accent {
     position: absolute;
     width: 10px;
     height: 5px;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     border-bottom: none;
     border-radius: 6px 6px 0 0;
     top: -7px;
@@ -325,7 +326,7 @@ h1 .accent {
     gap: 16px;
     padding: 10px 18px;
     border-radius: 999px;
-    background: #fff;
+    background: var(--white);
     box-shadow: 0 10px 24px rgba(28, 25, 21, 0.12);
     font-weight: 600;
 }
@@ -369,7 +370,7 @@ h1 .accent {
     border-radius: 50%;
     display: grid;
     place-items: center;
-    background: #fff;
+    background: var(--white);
     box-shadow: 0 8px 16px rgba(25, 20, 16, 0.12);
     font-size: 18px;
 }
@@ -459,7 +460,7 @@ h1 .accent {
 
 .ribbon-secondary {
     background: #e53b3b;
-    color: #fff;
+    color: var(--white);
     border: 2px solid #1b1b1b;
     margin-left: 12px;
 }
@@ -518,7 +519,7 @@ h1 .accent {
     display: grid;
     place-items: center;
     font-size: 18px;
-    color: #fff;
+    color: var(--white);
 }
 
 .flavour-icon.chili {
@@ -531,7 +532,7 @@ h1 .accent {
 
 .flavour-icon.smoke {
     background: #f6b12d;
-    color: #fff;
+    color: var(--white);
 }
 
 .top-flavours {
@@ -541,7 +542,7 @@ h1 .accent {
     display: grid;
     grid-template-columns: 220px 1fr;
     gap: 24px;
-    color: #fff;
+    color: var(--white);
 }
 
 .top-flavours-info h3 {
@@ -561,7 +562,7 @@ h1 .accent {
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.12);
-    color: #fff;
+    color: var(--white);
     font-size: 18px;
 }
 
@@ -588,7 +589,7 @@ h1 .accent {
     height: 140px;
     border-radius: 16px;
     overflow: hidden;
-    background: #fff;
+    background: var(--white);
     display: grid;
     place-items: center;
 }
@@ -654,7 +655,7 @@ h1 .accent {
     padding: 8px 16px;
     border-radius: 999px;
     background: #e53b3b;
-    color: #fff;
+    color: var(--white);
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.06em;
