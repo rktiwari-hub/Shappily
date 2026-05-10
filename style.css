@@ -5,9 +5,11 @@
     --text-muted: #d0c8d6;
     --accent: #f0d37a;
     --accent-dark: #2b1c10;
-    --character-img-width: 880px;
-    --character-offset-x: -260px;
-    --character-offset-y: -100px;
+    --hero-image-url: url("https://github.com/user-attachments/assets/a0702d9a-e692-406e-a053-942677c7b81e");
+    --eyebrow-color: #f2e3e0;
+    --character-crop-width: 880px;
+    --character-crop-x: -260px;
+    --character-crop-y: -100px;
 }
 
 * {
@@ -39,7 +41,7 @@ button {
     position: relative;
     min-height: 86vh;
     padding: 28px 60px 150px;
-    background: url("https://github.com/user-attachments/assets/a0702d9a-e692-406e-a053-942677c7b81e") center/cover no-repeat;
+    background: var(--hero-image-url) center/cover no-repeat;
     display: flex;
     flex-direction: column;
     gap: 120px;
@@ -171,7 +173,7 @@ button {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #f2e3e0;
+    color: var(--eyebrow-color);
 }
 
 .hero-title {
@@ -233,11 +235,10 @@ button {
     align-items: flex-end;
     justify-content: center;
     filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.45));
-}
-
-.hero-character img {
-    width: var(--character-img-width);
-    transform: translate(var(--character-offset-x), var(--character-offset-y));
+    background-image: var(--hero-image-url);
+    background-size: var(--character-crop-width) auto;
+    background-position: var(--character-crop-x) var(--character-crop-y);
+    background-repeat: no-repeat;
 }
 
 .vision {
