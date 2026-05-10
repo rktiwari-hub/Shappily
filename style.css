@@ -5,6 +5,11 @@
     --text-muted: #d0c8d6;
     --accent: #f0d37a;
     --accent-dark: #2b1c10;
+    --header-gap: 24px;
+    --nav-gap: 24px;
+    --hero-title-min: 40px;
+    --hero-title-max: 86px;
+    --hero-title-word-spacing: 14px;
     --page-min-height: 86vh;
     --hero-image-url: url("https://github.com/user-attachments/assets/a0702d9a-e692-406e-a053-942677c7b81e");
     --eyebrow-color: #f2e3e0;
@@ -67,7 +72,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: var(--header-gap);
     font-size: 13px;
     letter-spacing: 0.6px;
 }
@@ -114,7 +119,7 @@ button {
 .site-nav {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: var(--nav-gap);
     flex: 1;
     justify-content: center;
     font-weight: 300;
@@ -180,14 +185,14 @@ button {
 
 .hero-title {
     font-family: "Cinzel", serif;
-    font-size: clamp(40px, 7vw, 86px);
+    font-size: clamp(var(--hero-title-min), 7vw, var(--hero-title-max));
     letter-spacing: 3px;
     line-height: 0.95;
     text-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 }
 
 .hero-title span {
-    margin-left: 14px;
+    margin-left: var(--hero-title-word-spacing);
 }
 
 .hero-subtitle {
