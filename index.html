@@ -3,126 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loomé Collection</title>
+    <title>SunMall Chips</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="page">
         <header class="topbar">
-            <div class="brand">loomé.</div>
+            <div class="logo">
+                <span class="logo-mark" aria-hidden="true">
+                    <span class="ray ray-1"></span>
+                    <span class="ray ray-2"></span>
+                    <span class="ray ray-3"></span>
+                </span>
+                <span class="logo-text">SunMall</span>
+            </div>
             <nav class="nav">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link active">Shop</a>
-                <a href="#" class="nav-link">Collection</a>
-                <a href="#" class="nav-link">About</a>
-                <a href="#" class="nav-link">Contact</a>
-            </nav>~
-            <div class="actions">
-                <button class="icon-btn bag" aria-label="Shopping bag">
-                    <span class="bag-icon"></span>
-                    <span class="badge">2</span>
-                </button>
-                <button class="icon-btn menu" aria-label="Open menu">
-                    <span></span>
-                    <span></span>
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Chips</a>
+                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#">Contact</a>
+            </nav>
+            <div class="search">
+                <span class="search-icon" aria-hidden="true"></span>
+                <input type="search" placeholder="Search for chips...">
+                <span class="divider" aria-hidden="true"></span>
+                <button class="cart-btn" aria-label="View cart">
+                    <span class="cart-icon" aria-hidden="true"></span>
+                    <span class="cart-badge">4</span>
                 </button>
             </div>
         </header>
 
         <main class="hero">
             <section class="hero-copy">
-                <div class="eyebrow">
-                    <span class="leaf"></span>
-                    <span>NEW COLLECTION</span>
+                <div class="tag">
+                    <span class="tag-star" aria-hidden="true"></span>
+                    <span>100% REAL INGREDIENTS</span>
                 </div>
-                <h1>a cotton<br>weave</h1>
-                <div class="title-line"></div>
-                <p class="lead">
-                    Crafted from 100% organic cotton with
-                    a soft, breathable feel. Perfect for all
-                    seasons and everyday elegance.
+                <h1>
+                    Eat our <span class="accent">grilled</span><br>
+                    potato chips
+                </h1>
+                <span class="title-underline" aria-hidden="true"></span>
+                <p class="subtitle">
+                    Satisfying savory Chinese meat sauce chips
+                    without any hard-to-find ingredients.
                 </p>
-                <div class="colors">
-                    <span class="colors-label">colors</span>
-                    <div class="swatches">
-                        <span class="swatch sage"></span>
-                        <span class="swatch sand"></span>
-                        <span class="swatch rose"></span>
+                <div class="cta-row">
+                    <button class="primary-btn">
+                        <span class="bag-mini" aria-hidden="true"></span>
+                        Add to cart
+                    </button>
+                    <div class="qty">
+                        <button aria-label="Decrease quantity">-</button>
+                        <span>2</span>
+                        <button aria-label="Increase quantity">+</button>
                     </div>
                 </div>
-                <div class="details">
-                    <div class="details-title">
-                        <span>Details</span>
-                        <span class="dash"></span>
-                    </div>
-                    <p>
-                        Woven from long-staple organic cotton for a
-                        featherlight drape and breathable warmth. The
-                        subtle twill texture and hand-finished edge
-                        keep it polished yet effortless. Hand wash
-                        cold or dry clean to preserve softness.
-                    </p>
-                </div>
-                <div class="feature-row">
+                <div class="hero-features">
                     <div class="feature">
-                        <span class="feature-icon">🌿</span>
-                        <span class="feature-text">Organic Cotton</span>
+                        <span class="feature-icon leaf" aria-hidden="true"></span>
+                        <div>
+                            <strong>100% Natural</strong>
+                            <span>No artificial flavors</span>
+                        </div>
                     </div>
                     <div class="feature">
-                        <span class="feature-icon">🧵</span>
-                        <span class="feature-text">Soft &amp; Lightweight</span>
+                        <span class="feature-icon flame" aria-hidden="true"></span>
+                        <div>
+                            <strong>Oven Grilled</strong>
+                            <span>Not fried</span>
+                        </div>
                     </div>
                     <div class="feature">
-                        <span class="feature-icon">🪡</span>
-                        <span class="feature-text">Handmade Weave</span>
+                        <span class="feature-icon heart" aria-hidden="true"></span>
+                        <div>
+                            <strong>Tasty &amp; Crunchy</strong>
+                            <span>Irresistible bite</span>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="hero-media">
-                <div class="image-card">
-                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop" alt="Model wearing cotton scarf">
-                    <div class="pill price">$488</div>
-                    <div class="pill rating">
-                        Rating
-                        <span class="stars">★★★★★</span>
+            <section class="hero-visual">
+                <div class="bag-wrapper">
+                    <div class="bag-backdrop" aria-hidden="true"></div>
+                    <div class="bag-image">
+                        <img class="bag-photo" src="https://github.com/user-attachments/assets/7d5bf699-f6b9-4d3a-9a8a-73039a3c8b56" alt="SunMall Veggie Stix bag">
                     </div>
-                    <div class="vertical-label">cotton twill scarf</div>
-                    <button class="bag-cta">
-                        <span class="bag-cta-icon"></span>
-                        Add to bag
-                    </button>
+                    <div class="ribbons">
+                        <span class="ribbon ribbon-primary">Crispy &amp;</span>
+                        <span class="ribbon ribbon-secondary">Tasty</span>
+                    </div>
+                    <div class="decor decor-triangle"></div>
+                    <div class="decor decor-dots"></div>
                 </div>
-                <div class="thumbs">
-                    <button class="thumb active">
-                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=400&auto=format&fit=crop" alt="Thumbnail model">
-                    </button>
-                    <button class="thumb">
-                        <img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?q=80&w=400&auto=format&fit=crop" alt="Thumbnail fabric">
-                    </button>
-                    <button class="thumb">
-                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=400&auto=format&fit=crop" alt="Thumbnail neutral scarf">
-                    </button>
-                    <button class="thumb">
-                        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=400&auto=format&fit=crop" alt="Thumbnail cotton plant">
-                    </button>
+                <div class="flavour-list">
+                    <div class="flavour">
+                        <span class="flavour-icon chili" aria-hidden="true">🌶️</span>
+                        <div>
+                            <h4>Extra Chili</h4>
+                            <p>Zha jiang mian is crazy hot even when it is simplified</p>
+                        </div>
+                    </div>
+                    <div class="flavour">
+                        <span class="flavour-icon beef" aria-hidden="true">🥩</span>
+                        <div>
+                            <h4>Beef Flavour</h4>
+                            <p>Comes with a lot extra energy calories and Oxizen</p>
+                        </div>
+                    </div>
+                    <div class="flavour">
+                        <span class="flavour-icon smoke" aria-hidden="true">🔥</span>
+                        <div>
+                            <h4>Smokey Sauce</h4>
+                            <p>The meat sauce is kind of reminiscent of a Chinese.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <section class="benefits">
-            <div class="benefit">
-                <span class="benefit-icon">🛡️</span>
-                <span class="benefit-text">Secure Payment</span>
+        <section class="top-flavours">
+            <div class="top-flavours-info">
+                <h3>Our Top Flavours</h3>
+                <div class="slider-controls">
+                    <button aria-label="Previous flavour">&larr;</button>
+                    <button aria-label="Next flavour">&rarr;</button>
+                </div>
             </div>
-            <div class="benefit">
-                <span class="benefit-icon">🚚</span>
-                <span class="benefit-text">Free Shipping Over $100</span>
-            </div>
-            <div class="benefit">
-                <span class="benefit-icon">🔁</span>
-                <span class="benefit-text">Easy Returns 30 Days</span>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-photo product-photo--green" src="https://github.com/user-attachments/assets/7d5bf699-f6b9-4d3a-9a8a-73039a3c8b56" alt="Black Barbecue chips">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-name">Black Barbecue</span>
+                            <span class="rating">★★★★★ <span class="score">(4.8)</span></span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$12.30</span>
+                            <button class="order-btn">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-photo product-photo--black" src="https://github.com/user-attachments/assets/7d5bf699-f6b9-4d3a-9a8a-73039a3c8b56" alt="Mr. Potato chips">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-name">Mr. Potato</span>
+                            <span class="rating">★★★★★ <span class="score">(4.9)</span></span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$15.89</span>
+                            <button class="order-btn">Order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img class="product-photo product-photo--orange" src="https://github.com/user-attachments/assets/7d5bf699-f6b9-4d3a-9a8a-73039a3c8b56" alt="Tom Yomm chips">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-name">Tom Yomm</span>
+                            <span class="rating">★★★★★ <span class="score">(4.7)</span></span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">$11.50</span>
+                            <button class="order-btn">Order now</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
