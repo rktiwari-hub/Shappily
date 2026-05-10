@@ -8,6 +8,7 @@
     --orange: #f6b12d;
     --red: #e53b3b;
     --red-dark: #d63f3f;
+    --dark: #111;
     --shadow: 0 18px 40px rgba(33, 27, 21, 0.12);
     --white: #fff;
     --heading-min-size: 3.2rem;
@@ -185,7 +186,7 @@ button {
     width: 34px;
     height: 34px;
     border-radius: 10px;
-    background: #121212;
+    background: var(--dark);
     display: grid;
     place-items: center;
     position: relative;
@@ -293,7 +294,7 @@ h1 .accent {
 }
 
 .primary-btn {
-    background: #111;
+    background: var(--dark);
     color: var(--white);
     padding: 12px 22px;
     border-radius: 999px;
@@ -462,14 +463,14 @@ h1 .accent {
 
 .ribbon-primary {
     background: var(--orange);
-    color: #1b1b1b;
-    border: 2px solid #1b1b1b;
+    color: var(--text);
+    border: 2px solid var(--text);
 }
 
 .ribbon-secondary {
     background: var(--red);
     color: var(--white);
-    border: 2px solid #1b1b1b;
+    border: 2px solid var(--text);
     margin-left: 12px;
 }
 
@@ -539,7 +540,7 @@ h1 .accent {
 }
 
 .flavour-icon.smoke {
-    background: #f6b12d;
+    background: var(--orange);
     color: var(--white);
 }
 
@@ -641,7 +642,7 @@ h1 .accent {
 }
 
 .rating {
-    color: #f6b12d;
+    color: var(--orange);
     font-size: 12px;
 }
 
@@ -664,11 +665,17 @@ h1 .accent {
 .order-btn {
     padding: 8px 16px;
     border-radius: 999px;
-    background: #e53b3b;
+    background: var(--red);
     color: var(--white);
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.06em;
+}
+
+.anchor-target {
+    position: relative;
+    top: -80px;
+    height: 0;
 }
 
 @media (max-width: 1100px) {
