@@ -12,7 +12,9 @@
     --white: #fff;
     --heading-min-size: 3.2rem;
     --heading-max-size: 5.2rem;
-    --chips-sprite: url("https://github.com/user-attachments/assets/7d5bf699-f6b9-4d3a-9a8a-73039a3c8b56");
+    --chips-asset: url("https://github.com/user-attachments/assets/7d5bf699-f6b9-4d3a-9a8a-73039a3c8b56");
+    --sprite-scale: 155%;
+    --hero-scale: 180%;
 }
 
 * {
@@ -431,8 +433,10 @@ h1 .accent {
 .bag-photo {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: 70% 55%;
+    background-image: var(--chips-asset);
+    background-size: var(--hero-scale);
+    background-position: 70% 55%;
+    background-repeat: no-repeat;
 }
 
 .ribbons {
@@ -601,8 +605,8 @@ h1 .accent {
 .product-photo {
     width: 100%;
     height: 100%;
-    background-image: var(--chips-sprite);
-    background-size: 155%;
+    background-image: var(--chips-asset);
+    background-size: var(--sprite-scale);
     background-repeat: no-repeat;
 }
 
